@@ -1,6 +1,5 @@
 
-# KUKA KR210 Industrial Manipulator  
-## Full ROS 2 Control & Kinematics Pipeline 🦾🤖
+# KUKA KR210 Industrial Manipulator - Full ROS 2 Control & Kinematics Pipeline 🦾🤖
 
 ![ROS 2](https://img.shields.io/badge/ROS2-Humble-blue) 
 ![Ubuntu](https://img.shields.io/badge/Platform-Ubuntu%2022.04-orange)
@@ -15,12 +14,12 @@ This project demonstrates robot modeling, visualization, physics simulation, mot
 
 <p align="center">
   <img src="kr210_rviz.gif" width="45%" />
-  <img src="gazebo_sim.png" width="45%" />
+  <img src="kr210_gazebo.gif" width="45%" />
 </p>
 
 <p align="center">
-  <img src="control_motion.png" width="45%" />
-  <img src="kinematics_demo.png" width="45%" />
+  <img src="kr210_control.gif" width="45%" />
+  <img src="kr210_control_node.gif" width="45%" />
 </p>
 
 ---
@@ -31,12 +30,14 @@ This project demonstrates robot modeling, visualization, physics simulation, mot
 ```bash
 mkdir -p ~/manipulators_ws/src
 cd ~/manipulators_ws/src
-````
+
+```
 
 ### 2️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/BoghdadyAhmed2003/KUKA-KR210.git
+git clone [https://github.com/BoghdadyAhmed2003/KUKA-KR210.git](https://github.com/BoghdadyAhmed2003/KUKA-KR210.git)
+
 ```
 
 ### 3️⃣ Build Package
@@ -45,6 +46,7 @@ git clone https://github.com/BoghdadyAhmed2003/KUKA-KR210.git
 cd ..
 colcon build --packages-select kuka_kr210_arm
 source install/setup.bash
+
 ```
 
 ---
@@ -55,11 +57,14 @@ source install/setup.bash
 
 Visualize the robot URDF, joints, and TF tree using RViz.
 
-![RViz Visualization](rviz_view.png)
-
 ```bash
 ros2 launch kuka_kr210_arm rviz.launch.py
+
 ```
+
+<p align="center">
+<img src="kr210_rviz.gif" width="80%" />
+</p>
 
 ---
 
@@ -67,11 +72,14 @@ ros2 launch kuka_kr210_arm rviz.launch.py
 
 Spawn the robot in Gazebo with gravity, collisions, and realistic physics.
 
-![Gazebo Simulation](gazebo_sim.png)
-
 ```bash
 ros2 launch kuka_kr210_arm gazebo.launch.py
+
 ```
+
+<p align="center">
+<img src="kr210_gazebo.gif" width="80%" />
+</p>
 
 ---
 
@@ -79,12 +87,15 @@ ros2 launch kuka_kr210_arm gazebo.launch.py
 
 Run ROS 2 controllers and execute smooth joint trajectories.
 
-![Motion Control](control_motion.png)
-
 ```bash
 source install/setup.bash
 ros2 launch kuka_kr210_arm controller.launch.py
+
 ```
+
+<p align="center">
+<img src="kr210_control.gif" width="80%" />
+</p>
 
 ---
 
@@ -92,11 +103,14 @@ ros2 launch kuka_kr210_arm controller.launch.py
 
 Run the custom Forward and Inverse Kinematics solver.
 
-![Kinematics Results](kinematics_demo.png)
-
 ```bash
 ros2 run kuka_kr210_arm kinematics_node
+
 ```
+
+<p align="center">
+<img src="kr210_control_node.gif" width="80%" />
+</p>
 
 ---
 
@@ -109,21 +123,20 @@ kuka_kr210_arm/
 ├── launch/      # RViz, Gazebo, and controller launch files
 ├── scripts/     # Custom Python kinematics nodes
 └── config/      # ROS 2 controller configurations
+
 ```
 
 ---
 
 ## 👤 Author
 
-**Ahmed Boghdady**
-Mechatronics Engineer | Robotics & ROS 2 Developer
+**Ahmed Boghdady** Mechatronics Engineer | Robotics & ROS 2 Developer
 
-* **GitHub:** [https://github.com/BoghdadyAhmed2003](https://github.com/BoghdadyAhmed2003)
-* **LinkedIn:** [https://www.linkedin.com/in/boghdady-ahmed-b945b0275/](https://www.linkedin.com/in/boghdady-ahmed-b945b0275/)
+* **GitHub:** [BoghdadyAhmed2003](https://github.com/BoghdadyAhmed2003)
+* **LinkedIn:** [Boghdady Ahmed](https://www.linkedin.com/in/boghdady-ahmed-b945b0275/)
 
 ---
 
 ⭐ If you like this project, don’t forget to star the repository!
 
 ```
-
