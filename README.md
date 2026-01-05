@@ -14,13 +14,13 @@ This project demonstrates robot modeling, visualization, physics simulation, mot
 ## 🖼️ Project Overview (Quick Look)
 
 <p align="center">
-  <img src="figs/rviz_view.png" width="45%" />
-  <img src="figs/gazebo_sim.png" width="45%" />
+  <img src="rviz_view.png" width="45%" />
+  <img src="gazebo_sim.png" width="45%" />
 </p>
 
 <p align="center">
-  <img src="figs/control_motion.png" width="45%" />
-  <img src="figs/kinematics_demo.png" width="45%" />
+  <img src="control_motion.png" width="45%" />
+  <img src="kinematics_demo.png" width="45%" />
 </p>
 
 ---
