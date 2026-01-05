@@ -14,7 +14,7 @@ This project demonstrates robot modeling, visualization, physics simulation, mot
 ## 🖼️ Project Overview (Quick Look)
 
 <p align="center">
-  <img src="rviz_view.png" width="45%" />
+  <img src="kr210_rviz.gif" width="45%" />
   <img src="gazebo_sim.png" width="45%" />
 </p>
 
