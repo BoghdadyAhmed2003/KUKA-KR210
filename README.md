@@ -55,7 +55,7 @@ source install/setup.bash
 
 Visualize the robot URDF, joints, and TF tree using RViz.
 
-![RViz Visualization](figs/rviz_view.png)
+![RViz Visualization](rviz_view.png)
 
 ```bash
 ros2 launch kuka_kr210_arm rviz.launch.py
@@ -67,7 +67,7 @@ ros2 launch kuka_kr210_arm rviz.launch.py
 
 Spawn the robot in Gazebo with gravity, collisions, and realistic physics.
 
-![Gazebo Simulation](figs/gazebo_sim.png)
+![Gazebo Simulation](gazebo_sim.png)
 
 ```bash
 ros2 launch kuka_kr210_arm gazebo.launch.py
@@ -79,7 +79,7 @@ ros2 launch kuka_kr210_arm gazebo.launch.py
 
 Run ROS 2 controllers and execute smooth joint trajectories.
 
-![Motion Control](figs/control_motion.png)
+![Motion Control](control_motion.png)
 
 ```bash
 source install/setup.bash
@@ -92,7 +92,7 @@ ros2 launch kuka_kr210_arm controller.launch.py
 
 Run the custom Forward and Inverse Kinematics solver.
 
-![Kinematics Results](figs/kinematics_demo.png)
+![Kinematics Results](kinematics_demo.png)
 
 ```bash
 ros2 run kuka_kr210_arm kinematics_node
@@ -126,3 +126,4 @@ Mechatronics Engineer | Robotics & ROS 2 Developer
 ⭐ If you like this project, don’t forget to star the repository!
 
 ```
+
