@@ -1,13 +1,4 @@
-:
->
-> * `rviz_view.png`
-> * `gazebo_sim.png`
-> * `control_motion.png`
-> * `kinematics_demo.png`
 
----
-
-````md
 # KUKA KR210 Industrial Manipulator  
 ## Full ROS 2 Control & Kinematics Pipeline 🦾🤖
 
